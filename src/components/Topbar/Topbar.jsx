@@ -12,7 +12,7 @@ const Topbar = () => {
             <div className="topbarCenter">
                 <div className="searchBar">
                     <Search className="searchIcon" />
-                    <input   className="searchInput" type="text" placeholder="Search for friend, post ..." />
+                    <input   className="searchInput" type="text" placeholder="Tìm kiếm trên Mutosi social" />
                 </div>
             </div>
             <div className="topbarRight">

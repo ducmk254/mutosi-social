@@ -45,6 +45,7 @@
     cursor: pointer;
 
     margin-left: 10px;
+    color: rgb(158, 150, 150);
 }
 .searchInput{
     font-size: var(--font-basic-text);
