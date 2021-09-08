@@ -1,0 +1,151 @@
+.topbarContainer{
+    font-size: var(--font-basic-text);
+    width: 100%;
+    padding: 8px 20px;
+    /* border: 1px solid tomato; */
+    background-color: var(--bg-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.topbarLeft{
+    font-size: inherit;
+    flex: 1;
+
+    display: flex;
+}
+.logo{
+    cursor: pointer;
+}
+.logo_link{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-primary);
+
+    text-decoration: none;
+}
+.topbarCenter{
+    flex: 1;
+    font-size: var(--font-basic-text);
+}
+.searchBar {
+    font-size: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-color-input);
+    border-radius: 15px;
+}
+.searchIcon{
+    width: 2rem !important;
+    height: 2rem !important;
+    cursor: pointer;
+
+    margin-left: 10px;
+}
+.searchInput{
+    font-size: var(--font-basic-text);
+    border: none;
+    flex-grow: 1; /* để chiếm hết chiều rộng của thẻ cha */
+    outline: none;
+
+    padding: 10px 5px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+
+    background-color: var(--bg-color-input);
+}
+.searchInput:focus .searchIcon{
+    display: none;
+}
+
+.topbarRight{
+    flex: 1;
+    font-size: var(--font-basic-text);
+
+    display: flex;
+    align-items: center;
+}
+.topbarLink{
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    font-size: inherit;
+}
+.topbarLink__item{
+    font-size: inherit;
+    padding: 10px 5px 10px 10px;
+
+    text-decoration: none;
+    color: var(--color-primary);
+    
+}
+.topbarIcon{
+    font-size: inherit;
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+}
+.topbarIconItem{
+    position: relative;  
+
+    margin: auto 8px;
+    cursor: pointer;
+}
+.topbarIcon__item{
+    font-size: 2.4rem !important;
+    color: var(--color-primary);     
+}
+
+.topbarIcon__text{
+    /* width: 20px !important;
+    height: 20px !important;
+    color: var(--color-primary);
+
+    margin: 5px; */
+
+    background-color: red;
+    font-size: 1.2rem;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 50%;
+    color: var(--color-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top:-3px;
+    right: -3px;
+}
+
+.topbarAvatar{
+    font-size: inherit;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}   
+.topbarAvantar__img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid rgb(2, 167, 139);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
