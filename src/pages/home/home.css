@@ -1,0 +1,10 @@
+.homeContainer {
+    background-color: var(--bg-color-second);
+    
+    font-size: var(--font-basic-text);
+
+
+    display: flex;
+    
+
+}

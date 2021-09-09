@@ -1,7 +1,6 @@
 import "./topbar.css";
-import { NotificationsNone, Person, Search, Sms } from "@material-ui/icons";
+import { Notifications, Person, Search, Sms } from "@material-ui/icons";
 import {Link} from "react-router-dom";
-import { Badge } from "@material-ui/core";
 const Topbar = () => {
     
     return (
@@ -39,7 +38,7 @@ const Topbar = () => {
                         <span className="topbarIcon__text">4</span>
                     </div>
                     <div className="topbarIconItem">
-                        <NotificationsNone  className="topbarIcon__item" />
+                        <Notifications  className="topbarIcon__item" />
                         <span className="topbarIcon__text">4</span>
                     </div>                                   
                     
