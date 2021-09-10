@@ -1,9 +1,10 @@
 :root{
-  --bg-color-second:#f0f2f5;
-  --bg-color-primary: #B41E8E;
+  --bg-color-second:#f1f2f4;
+  --bg-color-primary: #B41E8E; /* #B41E8E*/
   --bg-color-input: rgb(247, 240, 240);
   --font-basic-text: 1.6rem;
   --color-primary: white;
+  --color-secondary: #1e1e1e;
   --height-topbar: 50px;
 }
 *{

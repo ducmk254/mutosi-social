@@ -1,4 +1,8 @@
 .feedContainer{
     font-size: inherit;
+    min-height: var(--height-topbar);
+    width: 100%;
     flex: 6;
+    overflow-y: scroll;
+
 }

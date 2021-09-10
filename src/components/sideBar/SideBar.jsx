@@ -10,49 +10,20 @@ const SideBar = () => {
                         <img className="sidebarAvatar" src="/assets/person/1.jpeg" alt="Sương sara" /> Sương sara
                     </li>
                     <li className="sidebarItem">
-                        <People className="sidebarIcon" /> Bạn bè
+                        <People color="primary" className="sidebarIcon" /> Bạn bè
                     </li>
                     <li className="sidebarItem">
-                        <Flag className="sidebarIcon" /> Trang
+                        <Flag color="secondary" className="sidebarIcon" /> Trang
                     </li>
                     <li className="sidebarItem">
-                        <GroupWork className="sidebarIcon" /> Nhóm
+                        <GroupWork color="error" className="sidebarIcon" /> Nhóm
                     </li>
                     <li className="sidebarItem">
-                        <Storefront className="sidebarIcon" /> Mutosi market
+                        <Storefront style={{color:"green"}} className="sidebarIcon" /> Mutosi market
                     </li>
                     <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
+                        <BookmarkBorder style={{color:"yellowgreen"}} className="sidebarIcon" /> Đã lưu
                     </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-                    <li className="sidebarItem">
-                        <BookmarkBorder className="sidebarIcon" /> Đã lưu
-                    </li>
-
-
                 </ul>
             </div>
         </div>

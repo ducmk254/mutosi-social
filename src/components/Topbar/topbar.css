@@ -9,19 +9,27 @@
     align-items: center;
     justify-content: flex-start;
 
-    -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.86); 
-    box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.86);
+    /* -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.86); 
+    box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.86); */
+    box-shadow: 0 2px 4px rgb(47 49 54 / 10%);
 
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .topbarLeft{
     font-size: inherit;
     flex: 1;
 
     display: flex;
+    align-items: center;
 }
 .logo{
     cursor: pointer;
+
+    margin-right: 20px;
 }
 .logo_link{
     font-size: 2rem;
@@ -31,29 +39,28 @@
 
     text-decoration: none;
 }
-.topbarCenter{
-    flex: 1;
-    font-size: var(--font-basic-text);
-}
+
 .searchBar {
     font-size: inherit;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 
     background-color: var(--bg-color-input);
     border-radius: 20px;
 }
 .searchIcon{
-    width: 2rem !important;
-    height: 2rem !important;
+    width: 2.6rem !important;
+    height: 2.6rem !important;
     cursor: pointer;
 
     margin-left: 10px;
     color: rgb(158, 150, 150);
+
+    justify-self: flex-start;
 }
 .searchInput{
+    
     font-size: var(--font-basic-text);
     border: none;
     flex-grow: 1; /* để chiếm hết chiều rộng của thẻ cha */
@@ -69,15 +76,19 @@
     display: none;
 }
 
-.topbarRight{
+
+
+
+.topbarCenter{
+    
     flex: 1;
     font-size: var(--font-basic-text);
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .topbarLink{
-    flex: 2;
     display: flex;
     align-items: center;
 
@@ -85,18 +96,62 @@
 }
 .topbarLink__item{
     font-size: inherit;
-    padding: 10px 5px 10px 10px;
+    padding: 10px;
 
     text-decoration: none;
-    color: var(--color-primary);
     
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height-topbar);
+    width: 80px;
+    border-radius: 5px;
+    margin: auto 2px;
+
+    transition: all .5s ease;
 }
-.topbarIcon{
-    font-size: inherit;
-    flex: 2;
+.topbarLink__active{
+    border-bottom: 3px solid #ffffff;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.topbarLink__item:hover{
+    height: 44px;
+    background-color: rgb(218, 206, 206) ;
+}
+.topbarLink__active:hover{
+    height: var(--height-topbar);
+    background-color: var(--bg-color-primary) transparent;
+}
+
+
+.topbarCenter__item{
+    width: 3.8rem !important;
+    height: 3.8rem !important;
+    color: var(--color-primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.topbarRight{
+    flex: 1;
+    font-size: var(--font-basic-text);
+
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
 
+.topbarIcon{
+    font-size: inherit;
+    display: flex;
+    align-items: center;
     justify-content: center;
 
 }
@@ -104,12 +159,11 @@
     position: relative;  
     width: 35px;
     height: 35px;
-
-    background-color: #E4E6EB;
+    background-color: #e0e2e7;
     border-radius: 50%;
     
     padding: 8px 8px;
-    margin: auto 5px;
+    margin: auto 8px;
     cursor: pointer;
 
     display: flex;
@@ -117,24 +171,20 @@
     align-items: center;
 }
 .topbarIconItem:hover{
-    background-color: #cccccc;
+    background-color: #ffffff;
 }
 .topbarIcon__item{
     font-size: 2.4rem !important;
-    color: black;     
+    /* color: black;      */
+    color:rgb(69, 71, 80);
 }
 
 .topbarIcon__text{
-    /* width: 20px !important;
-    height: 20px !important;
-    color: var(--color-primary);
 
-    margin: 5px; */
-
-    background-color: red;
+    background-color: #fc3628;
     font-size: 1.2rem;
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
     border: none;
     border-radius: 50%;
     color: var(--color-primary);
@@ -150,22 +200,34 @@
 
 .topbarAvatar{
     font-size: inherit;
-    flex: 1;
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
 }   
 .topbarAvantar__img{
     width: 40px;
     height: 40px;
     object-fit: cover;
-    border: 2px solid rgb(2, 167, 139);
+    /* border: 2px solid rgb(212, 117, 0); */
+    border: 0px solid rgb(255, 255, 255);
     border-radius: 50%;
+    margin-left: 50px;
 
     cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.topbarAccount{
+    font-size: inherit;
+    margin-left: 5px;
+    margin-right: 3px;
+    color: var(--color-primary);
+
+    display: flex;
+    align-items: center;
 }
