@@ -1,8 +1,11 @@
 .feedContainer{
-    font-size: inherit;
+    font-size: var(--font-basic-text);
     min-height: var(--height-topbar);
     width: 100%;
     flex: 6;
     overflow-y: scroll;
 
+}
+.feedWrapper{
+    padding: 20px;
 }

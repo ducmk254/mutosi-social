@@ -1,0 +1,138 @@
+.post{
+    background-color: white;
+    font-size: var(--font-basic-text);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.16); 
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.16);
+
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+
+    margin: 20px auto;
+}
+.postWrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: inherit;
+}
+.postHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: inherit;
+
+    
+}
+.postProfileImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.postProfileName{
+    flex-grow: 1;
+    font-size: inherit;
+
+    display: flex;
+    flex-direction: column;
+}
+.postName{
+    font-size: inherit;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.postTime{
+    font-size: calc(var(--font-basic-text) - 4px);
+}
+.postHeaderIcon{
+    width: 40px !important;
+    height: 40px !important;
+    color: gray;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+
+}
+.postHeaderIcon:hover{
+    border-radius: 50%;
+    background-color: rgb(247, 242, 242);
+}
+
+
+
+.postAction{
+    width: 100%;
+    font-size: inherit;
+    border-bottom: 1px solid rgb(179, 178, 178);
+    border-top: 1px solid rgb(179, 178, 178);
+    padding: 4px 0;
+
+    display: flex;
+    align-items: center;
+}
+.postActionLike{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: inherit;
+}
+.postActionLike:hover,.postActionComment:hover,.postActionShare:hover{
+    background-color: rgb(241, 236, 236); 
+}
+.postActionComment{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 0 5px;
+
+    font-size: inherit;
+}
+.postActionShare{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    font-size: inherit;
+}
+
+.postContent{
+    font-size: inherit;
+
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.postContentText{
+    font-size: inherit;
+    margin: 5px 0;
+}
+.postContentImage{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+.postComment{
+    width: 100%;
+}

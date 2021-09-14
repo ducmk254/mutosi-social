@@ -1,5 +1,5 @@
 import "./topbar.css";
-import { ArrowDropDown, HomeSharp, Notifications, Person, Search, Sms, SupervisedUserCircle } from "@material-ui/icons";
+import { ArrowDropDown, HomeSharp, Notifications, Person, Search, Sms, SupervisedUserCircle,Storefront } from "@material-ui/icons";
 import {NavLink,Link} from "react-router-dom";
 const Topbar = () => {
     
@@ -19,6 +19,9 @@ const Topbar = () => {
                     </NavLink >
                     <NavLink className="topbarLink__item"  to="/">
                         <SupervisedUserCircle className="topbarCenter__item" />
+                    </NavLink>
+                    <NavLink className="topbarLink__item"  to="/">
+                        <Storefront className="topbarCenter__item" />
                     </NavLink>
                 </div>
             </div>
