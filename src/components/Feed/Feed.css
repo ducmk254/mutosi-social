@@ -4,8 +4,10 @@
     width: 100%;
     flex: 6;
     overflow-y: scroll;
+    border-left: 1px solid rgba(161, 161, 161,.236);
+    border-right: 1px solid rgba(161, 161, 161,.236);
 
 }
 .feedWrapper{
-    padding: 20px;
+    padding: 20px 80px;
 }

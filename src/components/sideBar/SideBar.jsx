@@ -1,6 +1,10 @@
-import { BookmarkBorder, Flag, GroupWork, People, Storefront } from '@material-ui/icons';
-import React from 'react';
+import { BookmarkBorder } from '@material-ui/icons';
+import Member from "../icons/Member";
+import OrgSetting from "../icons/OrgSetting";
+import GroupSetting from "../icons/GroupSetting";
+import StoreOutline from "../icons/StoreOutline";
 import "./SideBar.css";
+import SaveIcon from '../icons/SaveIcon';
 const SideBar = () => {
     return (
         <div className="sidebarContainer">
@@ -10,19 +14,19 @@ const SideBar = () => {
                         <img className="sidebarAvatar" src="/assets/person/1.jpeg" alt="Sương sara" /> Sương sara
                     </li>
                     <li className="sidebarItem">
-                        <People color="primary" className="sidebarIcon" /> Bạn bè
+                        <Member width="3rem" height="3rem" className="sidebarIcon" /> Bạn bè
                     </li>
                     <li className="sidebarItem">
-                        <Flag color="secondary" className="sidebarIcon" /> Trang
+                        <OrgSetting width="3rem" height="3rem" color="secondary" className="sidebarIcon" /> Trang
                     </li>
                     <li className="sidebarItem">
-                        <GroupWork color="error" className="sidebarIcon" /> Nhóm
+                        <GroupSetting width="3rem" height="3rem" color="error" className="sidebarIcon" /> Nhóm
                     </li>
                     <li className="sidebarItem">
-                        <Storefront style={{color:"green"}} className="sidebarIcon" /> Mutosi market
+                        <StoreOutline width="3.4rem" height="3.4rem" color="green" classNameIcon="sidebarIcon" /> Mutosi market
                     </li>
                     <li className="sidebarItem">
-                        <BookmarkBorder style={{color:"yellowgreen"}} className="sidebarIcon" /> Đã lưu
+                        <SaveIcon width="3.4rem" height="3.4rem" className="sidebarIcon" /> Đã lưu
                     </li>
                 </ul>
             </div>

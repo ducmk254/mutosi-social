@@ -4,7 +4,6 @@
     min-height: calc(100vh - var(--height-topbar));
     background-color: var(--bg-color-second);
 
-    border-left: 1px solid rgba(161, 161, 161,.236);
 }
 .rightbarContainer:hover{
     overflow-y: scroll; 

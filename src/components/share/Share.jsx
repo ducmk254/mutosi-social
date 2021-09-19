@@ -1,6 +1,8 @@
 import React from 'react';
 import "./share.css";
-import {PhotoLibrary,InsertEmoticon,Label,Place} from '@material-ui/icons'
+import PictureVideoIcon from "../icons/PicrureVideoIcon";
+import LivestreamIcon from "../icons/LivestreamIcon";
+import QuestionIcon from "../icons/QuestionIcon";
 const Share = () => {
     return (
         <div className="shareFeed">
@@ -10,16 +12,13 @@ const Share = () => {
             </div>
             <div className="feedBottom">
                 <div className="feedBottom__item">
-                    <span><PhotoLibrary  htmlColor="tomato" className="feedItem__icon" /> Picture or Video</span>
+                    <span><PictureVideoIcon width="2.6rem" height="2.6rem"  className="feedItem__icon" /> Picture/Video</span>
                 </div>
                 <div className="feedBottom__item">
-                    <span><Label  htmlColor="blue" className="feedItem__icon" /> Tag</span>
+                    <span><LivestreamIcon width="2.6rem" height="2.6rem"  className="feedItem__icon" /> Livestream</span>
                 </div>
                 <div className="feedBottom__item">
-                    <span><Place  htmlColor="green"  className="feedItem__icon" /> Tag</span>
-                </div>
-                <div className="feedBottom__item">
-                    <span><InsertEmoticon  htmlColor="yellow" className="feedItem__icon" /> Feelings</span>
+                    <span><QuestionIcon width="2.6rem" height="2.6rem" className="feedItem__icon" /> Question</span>
                 </div>
             </div>
         </div>
