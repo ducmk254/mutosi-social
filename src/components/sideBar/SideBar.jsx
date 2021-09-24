@@ -1,17 +1,20 @@
-import { BookmarkBorder } from '@material-ui/icons';
 import Member from "../icons/Member";
 import OrgSetting from "../icons/OrgSetting";
 import GroupSetting from "../icons/GroupSetting";
 import StoreOutline from "../icons/StoreOutline";
 import "./SideBar.css";
 import SaveIcon from '../icons/SaveIcon';
+
+import {UserList} from "../../DummyData";
+import {UserOnline} from "../../DummyData";
+
 const SideBar = () => {
     return (
         <div className="sidebarContainer">
             <div className="sidebarWrapper">
                 <ul className="sidebarList">
                     <li className="sidebarItem">
-                        <img className="sidebarAvatar" src="/assets/person/1.jpeg" alt="Sương sara" /> Sương sara
+                        <img className="sidebarAvatar" src={UserList.filter(u=>u.id === UserOnline.id)[0].profile} alt={UserList.filter(u=>u.id === UserOnline.id)[0].username} /> {UserList.filter(u=>u.id === UserOnline.id)[0].username}
                     </li>
                     <li className="sidebarItem">
                         <Member width="3rem" height="3rem" className="sidebarIcon" /> Bạn bè

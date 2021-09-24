@@ -4,6 +4,9 @@ import {NavLink,Link} from "react-router-dom";
 import StoreOutline from "../icons/StoreOutline";
 import GroupIcon from "../icons/GroupIcon";
 import HomeIcon from "../icons/HomeIcon";
+import {UserList} from "../../DummyData";
+import {UserOnline} from "../../DummyData";
+
 const Topbar = () => {
     
     return (
@@ -45,8 +48,8 @@ const Topbar = () => {
                     </div>                                   
                 </div>
                 <div className="topbarAvatar">
-                    <img src="/assets/person/1.jpeg" alt="avatar" className="topbarAvantar__img" />
-                    <span className="topbarAccount">Sương Sara</span>
+                    <img src={UserList.filter(u=>u.id===UserOnline.id)[0].profile} alt={UserList.filter(u=>u.id===UserOnline.id)[0].username} className="topbarAvantar__img" />
+                    <span className="topbarAccount">{UserList.filter(u=>u.id===UserOnline.id)[0].username}</span>
                     <ArrowDropDown fontSize="1.6rem" style={{color:"white",cursor:"pointer"}} />
                 </div>
             </div>

@@ -3,12 +3,14 @@ import "./share.css";
 import PictureVideoIcon from "../icons/PicrureVideoIcon";
 import LivestreamIcon from "../icons/LivestreamIcon";
 import QuestionIcon from "../icons/QuestionIcon";
-const Share = () => {
+import {UserList} from "../../DummyData";
+
+const Share = ({UserOnline}) => {
     return (
-        <div className="shareFeed">
+            <div className="shareFeed">
             <div className="feedTop">
-                <img className="feedProfileImg" src="/assets/person/1.jpeg" alt="name" />
-                <input className="feedInput" type="text" placeholder="Châu ơi, bạn đang nghĩ gì thế?" />
+                <img className="feedProfileImg" src={UserList.filter(u => u.id === UserOnline.id)[0].profile} alt="name" />
+                <input className="feedInput" type="text" placeholder={UserList.filter(u => u.id === UserOnline.id)[0].username + " ơi, bạn đang nghĩ gì thế?"} />
             </div>
             <div className="feedBottom">
                 <div className="feedBottom__item">
@@ -22,6 +24,7 @@ const Share = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 export default Share;

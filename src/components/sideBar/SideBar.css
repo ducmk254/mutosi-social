@@ -7,9 +7,15 @@
     
     border-right: 0px solid rgba(161, 161, 161,.236);
 
+    /* Cố định sidebar không cuộn theo feed */
+    position: sticky;
+    position: -webkit-sticky;
+    top:var(--height-topbar);
 }
 .sidebarContainer:hover { /* khi hover chuột vào thì mới show scroll */
     overflow-y: scroll; 
+
+   
 }
 /* style for scroll */
 ::-webkit-scrollbar{
@@ -33,6 +39,8 @@
 .sidebarList{
     font-size: inherit;
     list-style: none;
+
+    width: 100%;
 }
 .sidebarItem{
     height: 55px;
