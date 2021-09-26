@@ -1,20 +1,21 @@
 .rightbarContainer{
-    font-size: inherit;
+    font-size: var(--font-basic-text);
     flex: 3;
-    min-height: calc(100vh - var(--height-topbar));
+    height: calc(100vh - var(--height-topbar));
     background-color: var(--bg-color-second);
 
     position: sticky;
     position: -webkit-sticky;
     top:var(--height-topbar);
 
-    margin: 20px 10px;
+    padding: 20px 10px;
     
 }
+/* 
 .rightbarContainer:hover{
     overflow-y: scroll; 
 }
-/* style for scroll */
+
 ::-webkit-scrollbar{
     width: 8px;
 }
@@ -28,53 +29,4 @@
     height: 50px;
 }
 
-.rightbarGroup{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-size: inherit;
-    border-bottom: 1px solid rgb(221, 220, 220);
-
-    padding-bottom: 20px;
-}
-.rightbarGroup__header{
-    font-size: inherit;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.rightbarGroup__header_title{
-    font-size: inherit;
-    font-weight: 500;
-    font-size: 2.2rem;
-}
-.rightbarGroup__header_view{
-    font-size: 1.2rem;
-    color: rgb(157, 159, 161);
-    cursor: pointer;
-}
-
-.rightbarGroup__List{
-    list-style: none;
-    font-size: inherit;
-
-}
-.rightbarGroup__item{
-    font-size: inherit;
-    list-style: none;
-
-    margin: 20px 0;
-}
-.rightbarGroup__footer{
-    font-size: inherit;
-    padding: 12px;
-    background-color: rgb(48, 169, 96);
-    cursor: pointer;
-
-    border-radius: 8px;
-    border: none;
-
-    color: white;
-}
+*/

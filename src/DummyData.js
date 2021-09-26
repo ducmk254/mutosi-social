@@ -60,28 +60,28 @@ export const PostList = [
 export const UserList = [
   {
     id: 1,
-    name: "Minh Châu",
+    name: "Minh Châu - IT Digital Workplace",
     username: "Minh Châu",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/1.jpeg",
   },
   {
     id: 2,
-    name: "Hoài Linh",
+    name: "Hoài Linh - Product Development Executive Product Development Executive",
     username: "Hoài Linh",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/2.jpeg",
   },
   {
     id: 3,
-    name: "Bà Hằng",
+    name: "Bà Hằng - Communication Executive",
     username: "Bà Hằng",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/3.jpeg",
   },
   {
     id: 4,
-    name: "Thủy Tiên",
+    name: "Thủy Tiên - HR intern",
     username: "Thủy Tiên",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/4.jpeg",
@@ -89,7 +89,7 @@ export const UserList = [
   {
     id: 5,
     name: "Trí Tài",
-    username: "Trí Tài",
+    username: "Trí Tài - Trade marketing executive",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/5.jpeg",
   },
@@ -98,3 +98,22 @@ export const UserList = [
 export const UserOnline = {
   id: 1,
 };
+
+export const FriendList = [
+  {
+    userId: 2,
+    status: true,
+  },
+  {
+    userId: 3,
+    status: true,
+  },
+  {
+    userId: 5,
+    status: false,
+  },
+  {
+    userId: 4,
+    status: true,
+  },
+];

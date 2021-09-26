@@ -1,7 +1,7 @@
 import React from 'react';
 import "./share.css";
 import PictureVideoIcon from "../icons/PicrureVideoIcon";
-import LivestreamIcon from "../icons/LivestreamIcon";
+import Incentive from "../icons/Incentive";
 import QuestionIcon from "../icons/QuestionIcon";
 import {UserList} from "../../DummyData";
 
@@ -17,7 +17,7 @@ const Share = ({UserOnline}) => {
                     <span><PictureVideoIcon width="2.6rem" height="2.6rem"  className="feedItem__icon" /> Picture/Video</span>
                 </div>
                 <div className="feedBottom__item">
-                    <span><LivestreamIcon width="2.6rem" height="2.6rem"  className="feedItem__icon" /> Livestream</span>
+                    <span><Incentive width="2.6rem" height="2.6rem"  className="feedItem__icon" />Give Recognition</span>
                 </div>
                 <div className="feedBottom__item">
                     <span><QuestionIcon width="2.6rem" height="2.6rem" className="feedItem__icon" /> Question</span>

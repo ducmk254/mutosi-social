@@ -29,7 +29,7 @@ const SideBar = () => {
                         <StoreOutline width="3.4rem" height="3.4rem" color="green" classNameIcon="sidebarIcon" /> Mutosi market
                     </li>
                     <li className="sidebarItem">
-                        <SaveIcon width="3.4rem" height="3.4rem" className="sidebarIcon" /> Đã lưu
+                        <SaveIcon width="3.4rem" height="3.4rem" className="sidebarIcon" /> Khảo sát thành viên
                     </li>
                 </ul>
             </div>
