@@ -1,19 +1,17 @@
-import "../home/home.css"
+import "./store.css";
 import RightBar from '../../components/rightBar/RightBar';
 import SideBar from '../../components/sideBar/SideBar';
-import Feed from "../../components/Feed/Feed";
 
 
-const Home = () => {
+const Store = () => {
     return (
         <>
             <div className="homeContainer">
                 <SideBar/>
-                <Feed />
                 <RightBar/>
             </div>
         </>
     );
 };
 
-export default Home;
+export default Store;

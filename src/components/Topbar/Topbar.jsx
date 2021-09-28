@@ -20,13 +20,13 @@ const Topbar = () => {
             </div>
             <div className="topbarCenter">
                 <div className="topbarLink">
-                    <NavLink className="topbarLink__item" activeClassName="topbarLink__active" to="/">
+                    <NavLink className="topbarLink__item" activeClassName="topbarLink__active" to="/" exact>
                         <HomeIcon width="3rem" height="3rem" color="#fff" classNameIcon="topbarCenter__item" />
                     </NavLink >
-                    <NavLink className="topbarLink__item"  to="/">
+                    <NavLink className="topbarLink__item" activeClassName="topbarLink__active" to="/group"  >
                         <GroupIcon width="3rem" height="3rem" color="#fff" classNameIcon="topbarCenter__item" />
                     </NavLink>
-                    <NavLink className="topbarLink__item"  to="/">
+                    <NavLink className="topbarLink__item" activeClassName="topbarLink__active" to="/store" >
                         <StoreOutline width="3rem" height="3rem"  color="#fff" classNameIcon="topbarCenter__item" />
                     </NavLink>
                 </div>

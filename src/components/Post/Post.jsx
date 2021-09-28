@@ -11,7 +11,7 @@ const Post = ({post}) => {
                 <div className="postHeader">
                     <img className="postProfileImg" src={UserList.filter(user=> user.id===post.userId)[0].profile} alt="name"/>
                     <div className="postProfileName">
-                        <span className="postName">{UserList.filter(user=> user.id===post.userId)[0].username}</span>
+                        <span className="postName">{UserList.filter(user=> user.id===post.userId)[0].name}</span>
                         <span className="postTime">{post.time}</span>
                     </div>
                     <div className="postHeaderAction"><MoreHoriz className="postHeaderIcon" /></div>

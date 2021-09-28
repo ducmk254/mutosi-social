@@ -67,7 +67,7 @@ export const UserList = [
   },
   {
     id: 2,
-    name: "Hoài Linh - Product Development Executive Product Development Executive",
+    name: "Hoài Linh - Product Development Executive",
     username: "Hoài Linh",
     email: "chauknm@mutosi.com",
     profile: "/assets/person/2.jpeg",
